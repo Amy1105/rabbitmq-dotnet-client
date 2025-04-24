@@ -267,9 +267,9 @@ namespace RabbitMQ.Client
         Task CloseAsync(ShutdownEventArgs reason, bool abort,
             CancellationToken cancellationToken = default);
 
-        /// <summary>Asynchronously declare an exchange.</summary>
-        /// <param name="exchange">The name of the exchange.</param>
-        /// <param name="type">The type of the exchange.</param>
+        /// <summary>Asynchronously declare an exchange.异步声明交换机.</summary>
+        /// <param name="exchange">The name of the exchange.交换机名称</param>
+        /// <param name="type">The type of the exchange.交换机类型</param>
         /// <param name="durable">Should this exchange survive a broker restart?</param>
         /// <param name="autoDelete">Should this exchange be auto-deleted?</param>
         /// <param name="arguments">The arguments.</param>
